@@ -20,9 +20,13 @@ lampOff.style.display = "block";
 
 lampSwitchButton.addEventListener("click", function () {
   if (lampOff.style.display === "none") {
-    (lampOff.style.display = "block") && (lampOn.style.display = "none");
+    (lampOff.style.display = "block") &&
+      (lampOn.style.display = "none") &&
+      (lampSwitchButton.textContent = "Spento");
   } else {
-    (lampOff.style.display = "none") && (lampOn.style.display = "block");
+    (lampOff.style.display = "none") &&
+      (lampOn.style.display = "block") &&
+      (lampSwitchButton.textContent = "Acceso");
   }
 
   return lampSwitchButton;
